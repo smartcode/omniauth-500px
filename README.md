@@ -1,5 +1,9 @@
 # OmniAuth strategy for 500px.com
 
+-- CURRENTLY NOT WORKING!!! 
+-- PLEASE SEE THE ISSUE 
+https://github.com/intridea/omniauth/issues/598 
+
 This is the unofficial OmniAuth strategy for authenticating to 500px. To
 use it, you'll need to sign up for an OAuth2 Application ID and Secret
 on the [500px Developer website](http://developers.500px.com/).
