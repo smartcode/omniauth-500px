@@ -2,13 +2,12 @@ require 'omniauth-oauth'
 
 module OmniAuth
   module Strategies
-    class Auth500px < OmniAuth::Strategies::OAuth
+    class Auth500px < OmniAuth::Strategies::OAuth2
 
       option :name, '500px'
       option :client_options, {
-        :authorize_path => '/v1/oauth/authorize',
-        :token_path => '/v1/oauth/access_token',
-        :request_token_path => "/v1/oauth/request_token",
+        :authorize_url => 'https://api.500px.com/v1/oauth/authorize',
+        :token_url => 'https://api.500px.com/v1/oauth/access_token',
         :site => 'https://api.500px.com'
       }
 
