@@ -11,6 +11,12 @@ module OmniAuth
         :site => 'https://api.500px.com'
       }
 
+      def request_phase
+        options[:scope] ||= 'basic'
+        options[:response_type] ||= 'code'
+        super
+      end
+      
       info do
         {
           :user_id      => raw_info["id"],
